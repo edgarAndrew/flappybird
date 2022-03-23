@@ -225,7 +225,7 @@ playButton.addEventListener('click',function(event){
 
     // Changing BlockMotion and gravityTimer depending on User screen width
     blockMotion = (window.screen.width > 900 ? setInterval(moveBlocks,16):setInterval(moveBlocks,30));
-    gravityTimer = (window.screen.width > 900 ? setInterval(gravity,20):setInterval(gravity,40));
+    gravityTimer = (window.screen.width > 900 ? setInterval(gravity,20):setInterval(gravity,30));
     collisonChecker = setInterval(check_collision,15);
     scoreUpdater = setInterval(keepScore,250);
 });
